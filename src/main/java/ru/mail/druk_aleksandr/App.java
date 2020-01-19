@@ -1,13 +1,12 @@
 package ru.mail.druk_aleksandr;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import ru.mail.druk_aleksandr.controller.HomeWorkController;
+import ru.mail.druk_aleksandr.controller.impl.HomeWorkControllerImpl;
+
+public class App {
+
+    public static void main(String[] args) {
+        HomeWorkController homeWorkController = HomeWorkControllerImpl.getInstance();
+        homeWorkController.runTask();
     }
 }
